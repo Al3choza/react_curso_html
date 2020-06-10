@@ -10,7 +10,7 @@ class Regards extends React.Component{
             <div>
                 <h1>
                     {/*  Ocupar props */}
-                    Hola : {this.props.objectName.name}
+                    Hola : {this.props.objectName.name + ' ' + this.props.objectName.lastName}
                 </h1>
             </div>
         )

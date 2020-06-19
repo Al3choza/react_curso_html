@@ -1,24 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import faker from 'Faker/Faker'
 
 import Regards from './Componentes/regards'
-
 
   class App extends React.Component{
     constructor(){
       super()
       this.state = {
         name: 'Nombre',
-        lastName: 'Apellido'
+        lastName: 'Apellido',
+
       }
       this.ChangeJoaquin = this.ChangeJoaquin.bind(this)
-      this.ChangeAlexis = this.ChangeAlexis.bind(this)
-      
+      this.ChangeAlexis = this.ChangeAlexis.bind(this) 
     }
     ChangeJoaquin(){
       // this.state.name='Joaquin'
-      // this.setState({name:'Joaquin',lastName:'Ramirez'})
       this.setState({name:'Joaquin',lastName:'Ramirez'})
     }
     ChangeAlexis(){
@@ -28,6 +27,7 @@ import Regards from './Componentes/regards'
       // Al ocupar arrowFunction no se necesita el bind
       this.setState(objName)
     }
+
   render (){
     return (
       <div className="App">
@@ -53,7 +53,8 @@ import Regards from './Componentes/regards'
           </button>
           <button onClick={()=> this.ChangeState({name:'Manuel',lastName:'Trujillo'})}>
             Manuel
-          </button>
+          </button>       
+          
         </header>
       </div>
     );
